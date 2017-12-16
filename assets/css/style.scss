@@ -14,3 +14,9 @@
 .positive {
   color: green;
 }
+
+@media (max-width: 767px) {
+  .container {
+    margin: 0;
+  }
+}
