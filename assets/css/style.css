@@ -1,0 +1,14 @@
+#btc-current-price {
+  color: #1270a0; }
+
+.result {
+  margin-top: 30px;
+  display: none; }
+
+.negative {
+  color: red; }
+
+.positive {
+  color: green; }
+
+/*# sourceMappingURL=style.css.map */
