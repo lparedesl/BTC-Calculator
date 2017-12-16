@@ -18,7 +18,7 @@ var BTC = function(){
              if ($(".result").is(":visible")) {
                  updateResult(res);
              }
-            // poll();
+            poll();
          });
     }
 
