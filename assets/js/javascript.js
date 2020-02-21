@@ -8,7 +8,12 @@ var BTC = function(){
     }
 
     function initEventListeners() {
-        $("#calculate").click(calculateCurrValue);
+        var form = document.getElementById('calculator-form');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            $.get("https://api.coinbase.com/v2/prices/spot?currency=USD")
+             .done(updateResult);
+        });
     }
 
     function getData() {

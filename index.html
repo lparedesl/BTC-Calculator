@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitcoin Price Calculator</title>
 
     <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -20,19 +21,19 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <form>
+                <form id="calculator-form">
                     <legend>Bitcoin Price Calculator</legend>
 
                     <div class="form-group">
                         <label for="btc-amount">BTC Amount</label>
-                        <input type="text" class="form-control" name="btc_amount" id="btc-amount" placeholder="BTC">
+                        <input type="text" class="form-control" name="btc_amount" id="btc-amount" placeholder="BTC" required>
                     </div>
                     <div class="form-group">
                         <label for="usd-amount">USD Amount</label>
-                        <input type="text" class="form-control" name="usd_amount" id="usd-amount" placeholder="USD">
+                        <input type="text" class="form-control" name="usd_amount" id="usd-amount" placeholder="USD" required>
                     </div>
 
-                    <button type="button" id="calculate" class="btn btn-primary">Calculate</button>
+                    <button type="submit" class="btn btn-primary">Calculate</button>
                 </form>
             </div>
         </div>
